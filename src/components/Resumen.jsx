@@ -2,7 +2,7 @@ import { FaHtml5, FaCss3, FaJs, FaReact, FaPython } from "react-icons/fa";
 
 const Resumen = () => {
   return (
-    <div id="resumen" className="max-w[1040] m-auto md:pl-20 p-4 py-16 ">
+    <div id="resume" className="max-w[1040] m-auto md:pl-20 p-4 py-16 ">
       <h1 className="text-4xl font-bold text-center text-[#0F1C2E]">
         About my
       </h1>
