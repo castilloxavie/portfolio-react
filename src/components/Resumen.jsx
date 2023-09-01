@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3, FaJs, FaReact, FaPython } from "react-icons/fa";
+import { FaCss3, FaHtml5, FaJs, FaPython, FaReact } from "react-icons/fa";
 
 const Resumen = () => {
   return (
