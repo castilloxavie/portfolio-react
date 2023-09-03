@@ -1,4 +1,4 @@
-import { FaCss3, FaDocker, FaHtml5, FaJs, FaPython, FaReact } from "react-icons/fa";
+import { FaCss3, FaHtml5, FaJs, FaPython, FaReact } from "react-icons/fa";
 
 const Resumen = () => {
   return (
@@ -18,6 +18,8 @@ const Resumen = () => {
         have allowed me to apply my technical and soft skills, and I am willing
         to learn and grow in a work environment.
       </p>
+
+    
 
       <div className=" flex justify-around pt-6 max-w-[100%] w-full ">
         <FaHtml5 size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-200 animate-spin text-green-500 hover:text-black" />
