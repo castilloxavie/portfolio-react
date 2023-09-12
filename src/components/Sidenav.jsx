@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AiOutlineHome, AiOutlineMail, AiOutlineMenu, AiOutlineProject } from "react-icons/ai";
+import { AiOutlineDownload, AiOutlineHome, AiOutlineMail, AiOutlineMenu, AiOutlineProject, AiOutlineWhatsApp} from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { GrProjects } from "react-icons/gr";
 
@@ -12,10 +12,14 @@ const Sidenav = () => {
 
     return (
         <div>
-            <AiOutlineMenu
+            <AiOutlineMenu size={20}
                 onClick={handleNav}
-                className="fixed top-4 right-4 z-[99] md:hidden bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% rounded-full hover:cursor-pointer hover:scale-110 ease-in duration-200 hover:"
+                className="fixed top-4 right-4 z-[99] md:hidden bg-green-500 rounded-full hover:cursor-pointer hover:scale-110 ease-in duration-200 hover:"
             />
+
+            <a href="https://api.whatsapp.com/send/?phone=+573116490366" className="fixed top-4 right-4 z-[99] md:hidden mt-8 bg-green-500 rounded-full motion-safe:animate-ping duration-[3000]" target="_block">
+                <AiOutlineWhatsApp size={20} />
+            </a>
 
             {nav ? (
                 <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
@@ -64,6 +68,15 @@ const Sidenav = () => {
                         <span className="pl-4">Contact</span>
                     </a>
 
+                    <a
+                        onClick={handleNav}
+                        href="/CV/XAVIER_CASTILLO _CV.pdf" target="_block"
+                        className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                    >
+                        <AiOutlineDownload size={20} />
+                        <span className="pl-4">Download</span>
+                    </a>
+
                     {/* <div>
             <a
               href="#main"
@@ -80,38 +93,52 @@ const Sidenav = () => {
             <div className="md:block hidden fixed top-[25%] z-10">
                 <div className="flex flex-col">
                     <a
-                        href="#main"
-                        className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
+                        href="#main" title="Home"
+                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
                     >
                         <AiOutlineHome size={20} />
                     </a>
 
                     <a
-                        href="#work"
-                        className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
+                        href="#work" title="Works"
+                        className="rounded-full shadow-lg bg-green-500  shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 "
                     >
                         <GrProjects size={20} />
                     </a>
 
                     <a
-                        href="#project"
-                        className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
+                        href="#project" title="Projects"
+                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
                     >
                         <AiOutlineProject size={20} />
                     </a>
 
                     <a
-                        href="#resume"
-                        className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
+                        href="#resume" title="Profile"
+                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
                     >
                         <BsPerson size={20} />
                     </a>
 
                     <a
-                        href="#contact"
-                        className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
+                        href="#contact" title="Contact"
+                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
                     >
                         <AiOutlineMail size={20} />
+                    </a>
+
+                    <a
+                        href="/CV/XAVIER_CASTILLO _CV.pdf" title="Download CV" target="_block"
+                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
+                    >
+                        <AiOutlineDownload size={20} />
+                    </a>
+
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=+573116490366" title="WhatsApp" target="_block"
+                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500 animate-bounce"
+                    >
+                        <AiOutlineWhatsApp size={20} />
                     </a>
                 </div>
             </div>
