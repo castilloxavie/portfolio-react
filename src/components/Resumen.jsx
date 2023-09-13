@@ -1,4 +1,6 @@
 import { FaCss3, FaHtml5, FaJs, FaPython, FaReact } from "react-icons/fa";
+import { SiDjango, SiMysql } from "react-icons/si"
+import {BsGit} from "react-icons/bs"
 
 const Resumen = () => {
   return (
@@ -21,12 +23,15 @@ const Resumen = () => {
 
     
 
-      <div className=" flex justify-around pt-6 max-w-[100%] w-full ">
-        <FaHtml5 size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-200 animate-spin text-green-500 hover:text-black" />
-        <FaCss3 size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-200 animate-spin text-green-500 hover:text-black" />
-        <FaJs size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-200 animate-spin text-green-500 hover:text-black" />
-        <FaReact size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-200 animate-spin text-green-500 hover:text-black" />
-        <FaPython size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-200 animate-spin text-green-500 hover:text-black" />
+      <div className=" flex justify-around pt-6 max-w-[100%] w-full max-sm:flex flex-wrap ">
+        <FaHtml5 size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-2000 animate-bounce text-green-500 hover:text-black" title="Html"/>
+        <FaCss3 size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-2000 animate-bounce text-green-500 hover:text-black" title="Css3"/>
+        <FaJs size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-2000 animate-bounce text-green-500 hover:text-black" title="JavaScript"/>
+        <FaReact size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-2000 animate-bounce text-green-500 hover:text-black" title="React"/>
+        <FaPython size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-2000 animate-bounce text-green-500 hover:text-black" title="Python"/>
+        <SiMysql size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-2000 animate-bounce text-green-500 hover:text-black" title="Mysql"/>
+        <SiDjango size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-2000 animate-bounce text-green-500 hover:text-black" title="Django"/>
+        <BsGit size={50} className="border-2 p-3 rounded-full bg-gray-100 shadow-gray-400 m-2  cursor-pointer hover:scale-110 ease-in duration-2000 animate-bounce text-green-500 hover:text-black" title="Django"/>
       </div>
     </div>
   );
