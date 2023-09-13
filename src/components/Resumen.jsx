@@ -1,6 +1,6 @@
+import { BsGit } from "react-icons/bs"
 import { FaCss3, FaHtml5, FaJs, FaPython, FaReact } from "react-icons/fa";
 import { SiDjango, SiMysql } from "react-icons/si"
-import {BsGit} from "react-icons/bs"
 
 const Resumen = () => {
   return (
