@@ -1,24 +1,17 @@
+import { useTranslation } from 'react-i18next';
 import { BsGit } from "react-icons/bs"
 import { FaCss3, FaHtml5, FaJs, FaPython, FaReact } from "react-icons/fa";
 import { SiDjango, SiMysql } from "react-icons/si"
 
 const Resumen = () => {
+  const { t } = useTranslation('translation');
   return (
     <div id="resume" className="max-w[1040] m-auto md:pl-20 p-4 py-16 ">
       <h1 className="text-4xl font-bold text-center text-[#0F1C2E]">
-        About my
+      {t('aboutMe')}
       </h1>
-      <p className="text-center py-8">
-        I am a junior ADSI developer technologist  programming
-        skills in Python, web development with Django, SQL Server Management and
-        MySQL databases, as well as knowledge of HTML, CSS, JavaScript and
-        React. I have trained on technological platforms such as Platzi and
-        Alura and I am constantly learning to improve my skills. I can work
-        effectively in a team, I am proactive and I have the ability to take the
-        initiative in solving problems. I have no work experience in the field
-        of software development, but I have small projects in my repository that
-        have allowed me to apply my technical and soft skills, and I am willing
-        to learn and grow in a work environment.
+      <p className="text-center py-8"> 
+        {t('tAboutMe')}
       </p>
 
     
