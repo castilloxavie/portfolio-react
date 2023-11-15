@@ -4,6 +4,14 @@ import { initReactI18next } from "react-i18next";
 const resources = {
     en: {
         translation: {
+
+            //main
+            mName: " I'm Xavier Castillo",
+            mI: " I'm a",
+            mDeveloper: "Developer",
+            mCoder: "Coder",
+            mTechADSI: "Tech ADSI",
+
             //resumen
             aboutMe: "About me",
             tAboutMe:
@@ -34,12 +42,28 @@ const resources = {
             //projects
             pdescription:
                 " The portfolio showcases a series of projects that exemplify a comprehensive journey, encompassing everything from foundational stages to advanced API consumption. Each project in this collection serves as a testament to the progression and growth, highlighting the evolution from fundamental concepts to more intricate phases like seamless integration and utilization of APIs.",
-
             pTitle: "Projects",
+
+
+            //contact
+            cContact: "Contact",
+            cFullName: "full name",
+            cphoneNumber: "Phone Number",
+            cEmail: "Email",
+            cSubject: "Subject",
+            cMessage: "Message",
+            cSendMessage: "Send Message",
         },
     },
     es: {
         translation: {
+            //main
+            mName: " Soy Xavier Castillo",
+            mI: "Soy un ",
+            mDeveloper: "Desarrollador",
+            mCoder: "Codificador",
+            mTechADSI:"Tecnologo ADSI",
+
             //resumen
             aboutMe: "Acerca de mi",
             tAboutMe:
@@ -70,8 +94,17 @@ const resources = {
             //projects
             pdescription:
                 "El portafolio muestra una serie de proyectos que ejemplifican un recorrido integral, que abarca todo, desde las etapas fundamentales hasta el consumo avanzado de API. Cada proyecto de esta colección sirve como testimonio de la progresión y el crecimiento, destacando la evolución desde conceptos fundamentales hasta fases más complejas como la integración perfecta y la utilización de API.",
-
             pTitle: "Proyectos",
+
+
+             //contact
+             cContact: "Contacto",
+             cFullName: "Nombre Completo",
+             cphoneNumber: "Numero telefonico",
+             cEmail: "Correo Electronico",
+             cSubject: "Asunto",
+             cMessage: "Mensaje",
+             cSendMessage: "Enviar Mensaje",
         },
     },
 };
