@@ -1,4 +1,5 @@
-import ProjectsItem from "./ProjectsItem";
+import { useTranslation } from 'react-i18next';
+
 import anime from "../assets/anime-API.png";
 import css from "../assets/css_architecture.png";
 import dom from "../assets/dom-manipulation.png";
@@ -7,13 +8,15 @@ import rick from "../assets/Rick-and-Morty-API.png";
 import user from "../assets/user-API.png";
 import validaation from "../assets/validation-html-form.png";
 import weather from "../assets/weather-API.png";
+import ProjectsItem from "./ProjectsItem";
 
 const Projects = () => {
+  const { t } = useTranslation('translation');
   return (
     <div id="project" className="max-w[1040] m-auto md:pl-20 p-4 py-16 ">
-      <h1 className="text-4xl font-bold text-center text-[#0F1C2E]">Projects</h1>
+      <h1 className="text-4xl font-bold text-center text-[#0F1C2E]">{t("pTitle")}</h1>
       <p className="text-center py-8">
-      The portfolio showcases a series of projects that exemplify a comprehensive journey, encompassing everything from foundational stages to advanced API consumption. Each project in this collection serves as a testament to the progression and growth, highlighting the evolution from fundamental concepts to more intricate phases like seamless integration and utilization of APIs.
+      {t("pdescription")}
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
         <ProjectsItem img={anime} title ="anime API" language ="React Js" url="https://anime-api-nine.vercel.app/" />

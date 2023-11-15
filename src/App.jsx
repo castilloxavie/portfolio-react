@@ -1,3 +1,5 @@
+import { I18nextProvider } from "react-i18next";
+
 import Contact from "./components/Contact";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import Main from "./components/Main";
@@ -6,16 +8,16 @@ import Resumen from "./components/Resumen";
 import Sidenav from "./components/Sidenav";
 import Work from "./components/Work";
 import i18n from "./i18n";
-import { I18nextProvider } from "react-i18next";
 
 function App() {
     return (
         <I18nextProvider i18n={i18n}>
             <div>
-                
+                <div className=" sm:left-[50%] flex flex-col absolute mt-2 ">
+                    <LanguageSwitcher />
+                </div>
                 <Sidenav />
                 <Main />
-                <LanguageSwitcher />
                 <Resumen />
                 <Work />
                 <Projects />

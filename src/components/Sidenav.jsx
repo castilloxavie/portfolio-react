@@ -14,7 +14,7 @@ const Sidenav = () => {
         <div>
             <AiOutlineMenu size={20}
                 onClick={handleNav}
-                className="fixed top-4 right-4 z-[99] md:hidden bg-green-500 p-1 rounded-full hover:cursor-pointer hover:scale-110 ease-in duration-200 hover:"
+                className="fixed top-4 right-4 z-[99] md:hidden bg-green-500 p-1 rounded-full hover:cursor-pointer hover:scale-110 ease-in duration-200 "
             />
 
             <a href="https://api.whatsapp.com/send/?phone=+573116490366" className="fixed top-4 right-4 z-[99] md:hidden mt-8 bg-green-500 rounded-full motion-safe:animate-ping duration-[3000]" target="_block">
