@@ -15,29 +15,25 @@ const resources = {
             //resumen
             aboutMe: "About me",
             tAboutMe:
-                "I am a junior ADSI developer technologist  programming  skills in Python, web development with Django, SQL Server Management and MySQL databases, as well as knowledge of HTML, CSS, JavaScript and React. I have trained on technological platforms such as Platzi and Alura and I am constantly learning to improve my skills. I can work effectively in a team, I am proactive and I have the ability to take the initiative in solving problems. I have no work experience in the field of software development, but I have small projects in my repository that have allowed me to apply my technical and soft skills, and I am willing to learn and grow in a work environment",
+                "Systems Engineering student in the fifth semester of training and Technologist in Analysis and Systems Development with experience in Web application development, database analysis and updating, process automation, and implementation of improvement strategies. With competencies such as: Problem-solving, continuous improvement, results orientation, and adaptability.",
 
             // work
-            wTitle: "Works",
-            wSubTitle: "Systems Assistant",
-            WDuration: "1 Year",
+            wTitle: "Experience",
+            wSubTitle: "Automation Analyst",
+            WDuration: "Jul 2025 - Oct 2025 · 4 months",
             wDetail:
-                "maintenance and support of computer equipment, installation and configuration of software, basic knowledge of networks and computer security. Can solve computer problems and works well in a team, keeping up with technology and acting with professional ethics. It is adaptable and can communicate effectively with users..",
+                "I worked as a Backend Developer specializing in HR Tech solutions, where I designed and built custom tools with JavaScript, TypeScript, Node.js for integrating complex talent management systems. I led the automation of critical processes using n8n, Puppeteer, and ensured advanced database management with SQL, achieving optimized information integrity throughout the employee lifecycle.",
 
-            wSubTitle2: "Data Assurance",
-            WDuration2: "4 months",
+            wSubTitle2: "L2 Support Analyst",
+            WDuration2: "Oct 2023 - Jul 2025 · 1 year 10 months",
             wDetail2:
-                "handled SQL Server Management Studio databases for EPSI user queries and exceptional customer service. Excel was used to cross tables, update the status system, and manage new entries. Proficient in office tools like Excel and Word, optimizing daily tasks. My commitment ensures efficient platform management, adding value to each project.",
+                "I worked as a Specialist in Technical Support and Critical Infrastructure Management, where I administered and maintained Relational Databases, ensuring the integrity and availability of sensitive information. I led remote access management and server administration under secure protocols (SSH), using global standard tools like BeyondTrust (Bomgar), VNC, and enterprise support. My management stood out for combining high-level technical resolution with effective communication, guaranteeing technological service stability and user satisfaction in high-demand environments.",
 
-            wSubTitle3: "Labor Practice (SENA)",
-            WDuration3: "6 months",
+            wSubTitle3: "Database Assistant",
+            WDuration3: "Aug 2022 - Nov 2022 · 4 months",
             wDetail3:
-                "My functions to perform were to feed a database, in the area of systems, preventive and corrective management of computer equipment and printers, also internal customer service in person or virtually, review of structured internet cabling.",
+                "I specialized in the design, administration, and optimization of relational databases, where I guaranteed information integrity and efficiency in complex queries. I led the resolution of technical requirements and user support in critical environments, applying assertive communication to transform operational needs into robust technological solutions.",
 
-            wSubTitle4: "Systems Assistant",
-            WDuration4: "1 Year",
-            wDetail4:
-                "maintenance and support of computer equipment, installation and configuration of software, basic knowledge of networks and computer security. Can solve computer problems and works well in a team, keeping up with technology and acting with professional ethics. It is adaptable and can communicate effectively with users..",
 
             //projects
             pdescription:
@@ -65,31 +61,27 @@ const resources = {
             mTechADSI:"Tecnologo ADSI",
 
             //resumen
-            aboutMe: "Acerca de mi",
+            aboutMe: "Acerca de mí",
             tAboutMe:
-                "Soy un desarrollador junior ADSI tecnólogo con habilidades de programación en Python, desarrollo web con Django, SQL Server Management y bases de datos MySQL, así como conocimientos de HTML, CSS, JavaScript y React. Me he formado en plataformas tecnológicas como Platzi y Alura y estoy en constante aprendizaje para mejorar mis habilidades. Puedo trabajar eficazmente en equipo, soy proactivo y tengo capacidad para tomar la iniciativa en la resolución de problemas. No tengo experiencia laboral en el campo del desarrollo de software, pero tengo pequeños proyectos en mi repositorio que me han permitido aplicar mis habilidades técnicas y blandas, y estoy dispuesto a aprender y crecer en un ambiente laboral.",
+                "Estudiante de Ingeniería de Sistemas en quinto semestre de formación y Tecnólogo en Análisis y Desarrollo de Sistemas con experiencia en desarrollo de aplicaciones Web, análisis y actualización de bases de datos, automatización de procesos e implementación de estrategias de mejora. Con competencias como: Solución de problemas, mejoramiento continuo, orientación a resultados y adaptabilidad.",
 
             // work
-            wTitle: "Trabajos",
-            wSubTitle: "Asistente de Sistemas",
-            WDuration: "1 año",
+            wTitle: "Experiencia",
+            wSubTitle: "Analista de Automatización",
+            WDuration: "Jul 2025 - Oct 2025 · 4 meses",
             wDetail:
-                "mantenimiento y soporte de equipos de cómputo, instalación y configuración de software, conocimientos básicos de redes y seguridad informática. Puede resolver problemas informáticos y trabaja bien en equipo, manteniéndose al día con la tecnología y actuando con ética profesional. Es adaptable y puede comunicarse eficazmente con los usuarios.",
+                "Me desempeñé como Desarrollador Backend especializado en soluciones HR Tech, donde diseñé y construí herramientas a medida con JavaScript, TypeScript, Node.js para la integración de sistemas complejos de gestión de talento. Lideré la automatización de procesos críticos mediante n8n, Puppeteer y aseguré la gestión avanzada de bases de datos con SQL, logrando optimizar la integridad de la información durante todo el ciclo de vida del empleado.",
 
-            wSubTitle2: "Aseguramiento de Datos",
-            WDuration2: "4 meses",
+            wSubTitle2: "Analista de Soporte L2",
+            WDuration2: "Oct 2023 - Jul 2025 · 1 año 10 meses",
             wDetail2:
-                "manejé bases de datos de SQL Server Management Studio para consultas de usuarios de EPSI y un servicio al cliente excepcional. Se utilizó Excel para cruzar tablas, actualizar el sistema de estado y gestionar nuevas entradas. Dominio de herramientas ofimáticas como Excel y Word, optimizando las tareas diarias. Mi compromiso asegura una gestión eficiente de la plataforma, agregando valor a cada proyecto.",
+                "Me desempeñé como Especialista en Soporte Técnico y Gestión de Infraestructura Crítica, donde administré y mantuve Bases de Datos Relacionales, asegurando la integridad y disponibilidad de información sensible. Lideré la gestión de accesos remotos y administración de servidores bajo protocolos seguros (SSH), utilizando herramientas de estándar global como BeyondTrust (Bomgar), VNC y soporte empresarial. Mi gestión destacó por combinar resolución técnica de alto nivel con una comunicación efectiva, garantizando la estabilidad de servicios tecnológicos y la satisfacción de usuarios en entornos de alta exigencia.",
 
-            wSubTitle3: "Práctica Laboral (SENA)",
-            WDuration3: "6 meses",
+            wSubTitle3: "Auxiliar de Bases de Datos",
+            WDuration3: "Ago 2022 - Nov 2022 · 4 meses",
             wDetail3:
-                "Mis funciones a desempeñar fueron alimentar una base de datos, en el área de sistemas, manejo preventivo y correctivo de equipos de cómputo e impresoras, también atención al cliente interno de manera presencial o virtual, revisión de cableado estructurado de internet.",
+                "Especialicé mi gestión en el diseño, administración y optimización de bases de datos relacionales, donde garanticé la integridad de la información y la eficiencia en consultas complejas. Lideré la resolución de requerimientos técnicos y la atención a usuarios en entornos críticos, aplicando una comunicación asertiva para transformar necesidades operativas en soluciones tecnológicas robustas.",
 
-            wSubTitle4: "Asistente de Sistemas",
-            WDuration4: "1 Año",
-            wDetail4:
-                "mantenimiento y soporte de equipos de cómputo, instalación y configuración de software, conocimientos básicos de redes y seguridad informática. Puede resolver problemas informáticos y trabaja bien en equipo, manteniéndose al día con la tecnología y actuando con ética profesional. Es adaptable y puede comunicarse eficazmente con los usuarios.",
 
             //projects
             pdescription:

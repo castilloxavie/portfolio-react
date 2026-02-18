@@ -26,9 +26,9 @@ function App() {
                 <footer className="flex justify-center text-center">
                     <a
                         href="#main"
-                        className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 font-bold"
+                        className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-secondaryBg shadow-borderSubtle m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 font-bold"
                     >
-                        By Xavier Alberto Castillo Varon G-28 Academlo
+                        By Xavier Alberto Castillo Varon - 2026
                     </a>
                 </footer>
             </div>

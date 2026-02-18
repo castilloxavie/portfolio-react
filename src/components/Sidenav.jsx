@@ -5,144 +5,51 @@ import { GrProjects } from "react-icons/gr";
 
 const Sidenav = () => {
     const [nav, setNav] = useState(false);
+    const handleNav = () => setNav(!nav);
 
-    const handleNav = () => {
-        setNav(!nav);
-    };
+    const navLinks = [
+        { href: "#main", icon: AiOutlineHome, text: "Home", title: "Home" },
+        { href: "#work", icon: GrProjects, text: "Work", title: "Works" },
+        { href: "#project", icon: AiOutlineProject, text: "Project", title: "Projects" },
+        { href: "#resume", icon: BsPerson, text: "About My", title: "Profile" },
+        { href: "#contact", icon: AiOutlineMail, text: "Contact", title: "Contact" },
+        { href: "/CV/XAVIER_CASTILLO _CV.pdf", icon: AiOutlineDownload, text: "Download", title: "Download CV", target: "_blank" },
+        { href: "https://api.whatsapp.com/send/?phone=+573116490366", icon: AiOutlineWhatsApp, text: "", title: "WhatsApp", target: "_blank", className: "animate-bounce" },
+    ];
 
     return (
         <div>
             <AiOutlineMenu size={20}
                 onClick={handleNav}
-                className="fixed top-4 right-4 z-[99] md:hidden bg-green-500 p-1 rounded-full hover:cursor-pointer hover:scale-110 ease-in duration-200 "
+                className="fixed top-4 right-4 z-[99] md:hidden bg-accent p-1 rounded-full hover:cursor-pointer hover:scale-110 ease-in duration-200 "
             />
 
-            <a href="https://api.whatsapp.com/send/?phone=+573116490366" className="fixed top-4 right-4 z-[99] md:hidden mt-8 bg-green-500 rounded-full motion-safe:animate-ping duration-[3000]" target="_block">
+            <a href="https://api.whatsapp.com/send/?phone=+573116490366" className="fixed top-4 right-4 z-[99] md:hidden mt-8 bg-accent rounded-full motion-safe:animate-ping duration-[3000]" target="_blank">
                 <AiOutlineWhatsApp size={20} />
             </a>
 
             {nav ? (
-                <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
-                    <a
-                        onClick={handleNav}
-                        href="#main"
-                        className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-green-500 font-semibold shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-                    >
-                        <AiOutlineHome size={20} />
-                        <span className="pl-4">Home</span>
-                    </a>
-
-                    <a
-                        onClick={handleNav}
-                        href="#work"
-                        className="w-[75%] flex justify-center items-center rounded-full shadow-lg  bg-green-500 font-semibold shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-                    >
-                        <GrProjects size={20} />
-                        <span className="pl-4">Work</span>
-                    </a>
-
-                    <a
-                        onClick={handleNav}
-                        href="#project"
-                        className="w-[75%] flex justify-center items-center rounded-full shadow-lg  bg-green-500 font-semibold shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-                    >
-                        <AiOutlineProject size={20} />
-                        <span className="pl-4">Project</span>
-                    </a>
-
-                    <a
-                        onClick={handleNav}
-                        href="#resume"
-                        className="w-[75%] flex justify-center items-center rounded-full shadow-lg  bg-green-500 font-semibold shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-                    >
-                        <BsPerson size={20} />
-                        <span className="pl-4">About My</span>
-                    </a>
-
-                    <a
-                        onClick={handleNav}
-                        href="#contact"
-                        className="w-[75%] flex justify-center items-center rounded-full shadow-lg  bg-green-500 font-semibold shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-                    >
-                        <AiOutlineMail size={20} />
-                        <span className="pl-4">Contact</span>
-                    </a>
-
-                    <a
-                        onClick={handleNav}
-                        href="/CV/XAVIER_CASTILLO _CV.pdf" target="_block"
-                        className="w-[75%] flex justify-center items-center rounded-full shadow-lg  bg-green-500 font-semibold shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-                    >
-                        <AiOutlineDownload size={20} />
-                        <span className="pl-4">Download</span>
-                    </a>
-
-                    {/* <div>
-            <a
-              href="#main"
-              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300"
-            >
-              <BsPerson size={20} />
-            </a>
-          </div> */}
+                <div className="fixed w-full h-screen bg-secondaryBg/90 flex flex-col justify-center items-center z-20">
+                    {navLinks.slice(0, 6).map((link, index) => (
+                        <a key={index} onClick={handleNav} href={link.href} target={link.target} className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-accent font-semibold shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
+                            <link.icon size={20} />
+                            <span className="pl-4">{link.text}</span>
+                        </a>
+                    ))}
                 </div>
-            ) : (
-                ""
-            )}
+            ) : ("")}
 
             <div className="md:block hidden fixed top-[25%] z-10">
                 <div className="flex flex-col">
-                    <a
-                        href="#main" title="Home"
-                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
-                    >
-                        <AiOutlineHome size={20} />
-                    </a>
-
-                    <a
-                        href="#work" title="Works"
-                        className="rounded-full shadow-lg bg-green-500  shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 "
-                    >
-                        <GrProjects size={20} />
-                    </a>
-
-                    <a
-                        href="#project" title="Projects"
-                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
-                    >
-                        <AiOutlineProject size={20} />
-                    </a>
-
-                    <a
-                        href="#resume" title="Profile"
-                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
-                    >
-                        <BsPerson size={20} />
-                    </a>
-
-                    <a
-                        href="#contact" title="Contact"
-                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
-                    >
-                        <AiOutlineMail size={20} />
-                    </a>
-
-                    <a
-                        href="/CV/XAVIER_CASTILLO _CV.pdf" title="Download CV" target="_block"
-                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500"
-                    >
-                        <AiOutlineDownload size={20} />
-                    </a>
-
-                    <a
-                        href="https://api.whatsapp.com/send/?phone=+573116490366" title="WhatsApp" target="_block"
-                        className="rounded-full shadow-lg bg-black shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-green-500 animate-bounce"
-                    >
-                        <AiOutlineWhatsApp size={20} />
-                    </a>
+                    {navLinks.map((link, index) => (
+                        <a key={index} href={link.href} title={link.title} target={link.target} className={`rounded-full shadow-lg bg-primaryBg shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-100 ease-in duration-300 text-accent ${link.className || ""}`}>
+                            <link.icon size={20} />
+                        </a>
+                    ))}
                 </div>
             </div>
         </div>
     );
 };
+
 export default Sidenav;
