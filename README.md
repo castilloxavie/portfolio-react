@@ -1,4 +1,4 @@
-# Portafolio with the Spanish version. - Xavier Alberto Castillo Varon
+# Portafolio - Xavier Alberto Castillo Varon
 
 Sitio web de portafolio personal que muestra mi trabajo, proyectos y habilidades como Desarrollador Full Stack.
 
